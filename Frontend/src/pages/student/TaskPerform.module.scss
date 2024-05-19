@@ -1,0 +1,43 @@
+.taskPerform {
+  // not started
+  &__notStartedTaskBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  //content
+
+  &__titleHeader {
+    margin-top: 30px;
+  }
+
+  &__endButtonContainer {
+    margin-top: 40px;
+  }
+
+  &__endButton {
+    width: 100%;
+  }
+
+  &__answersTablePopUp {
+    width: 1000px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .taskPerform {
+    &__answersTablePopUp {
+      width: 520px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .taskPerform {
+    &__answersTablePopUp {
+      width: 100%;
+    }
+  }
+}

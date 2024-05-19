@@ -1,0 +1,20 @@
+.textArea {
+  &__input {
+    resize: none;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    outline: none;
+    white-space: nowrap;
+    padding: 5px 10px;
+    box-sizing: border-box;
+
+    &:hover,
+    &:focus {
+      background-color: var(--background-focus-color);
+    }
+  }
+
+  &__errorText {
+    color: var(--error-color);
+  }
+}
